@@ -274,6 +274,54 @@ body {
           flex: 1 1 auto;
 }
 
+.page__security {
+  margin-top: 7.5rem;
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem )) {
+  .page__security {
+    margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem )) {
+  .page__security {
+    margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.page__room {
+  margin-top: 7.5rem;
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem )) {
+  .page__room {
+    margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem )) {
+  .page__room {
+    margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.page__house {
+  margin-top: 7.5rem;
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem )) {
+  .page__house {
+    margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.2434210526rem  +  3.1578947368vw , 3.75rem )) {
+  .page__house {
+    margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 59.375);
+  }
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -343,15 +391,49 @@ body {
   text-align: center;
 }
 
-@supports (font-size: clamp( 1.5rem , 1.1631578947rem  +  1.6842105263vw , 2.5rem )) {
+@supports (font-size: clamp( 1.875rem , 1.6644736842rem  +  1.0526315789vw , 2.5rem )) {
   .title-h2 {
-    font-size: clamp( 1.5rem , 1.1631578947rem  +  1.6842105263vw , 2.5rem );
+    font-size: clamp( 1.875rem , 1.6644736842rem  +  1.0526315789vw , 2.5rem );
   }
 }
 
-@supports not (font-size: clamp( 1.5rem , 1.1631578947rem  +  1.6842105263vw , 2.5rem )) {
+@supports not (font-size: clamp( 1.875rem , 1.6644736842rem  +  1.0526315789vw , 2.5rem )) {
   .title-h2 {
-    font-size: calc(1.5rem + 1 * (100vw - 20rem) / 59.375);
+    font-size: calc(1.875rem + 0.625 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.title-h1 {
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@supports (font-size: clamp( 1.875rem , 1.4539473684rem  +  2.1052631579vw , 3.125rem )) {
+  .title-h1 {
+    font-size: clamp( 1.875rem , 1.4539473684rem  +  2.1052631579vw , 3.125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.4539473684rem  +  2.1052631579vw , 3.125rem )) {
+  .title-h1 {
+    font-size: calc(1.875rem + 1.25 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.title-h3 {
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@supports (font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 1.875rem )) {
+  .title-h3 {
+    font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 1.875rem )) {
+  .title-h3 {
+    font-size: calc(1.25rem + 0.625 * (100vw - 20rem) / 59.375);
   }
 }
 
@@ -673,6 +755,15 @@ body {
 
 .icon-menu {
   display: none;
+}
+
+.no-webp .footer{
+  background-image: url(img/bg.jpg); }
+
+.footer {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 40px;
 }
 
 .footer__body {
@@ -1175,6 +1266,11 @@ body {
   }
 }
 
+.price__arrow_red {
+  border-top: 1px solid #f20a0a;
+  border-bottom: 1px solid #f20a0a;
+}
+
 .price__arrow:not(:last-child) {
   margin-bottom: 0.625rem;
 }
@@ -1252,6 +1348,88 @@ body {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
+}
+
+.security__title {
+  padding: 1.875rem 0;
+}
+
+.security__list {
+  line-height: 150%;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem )) {
+  .security__list {
+    font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem )) {
+  .security__list {
+    font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.security__item {
+  padding-bottom: 0.9375rem;
+}
+
+.security__btn {
+  margin-top: 1.25rem;
+}
+
+.room__title {
+  padding: 1.875rem 0 0.625rem 0;
+}
+
+.room__body {
+  line-height: 150%;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem )) {
+  .room__body {
+    font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem )) {
+  .room__body {
+    font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.room__item {
+  margin: 0 0 0.625rem 1.875rem;
+  list-style-type: disc;
+}
+
+.room__text {
+  padding-bottom: 0.9375rem;
+}
+
+.house__body {
+  line-height: 150%;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem )) {
+  .house__body {
+    font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.7486842105rem  +  0.6315789474vw , 1.25rem )) {
+  .house__body {
+    font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.house__text {
+  padding-bottom: 0.9375rem;
+}
+
+.house__item {
+  margin: 0 0 0.625rem 1.875rem;
+  list-style-type: disc;
 }
 
 .swiper {
@@ -1466,6 +1644,18 @@ body {
 }
 
 @media (max-width: 61.99875em) {
+  .page__security {
+    margin-top: 5rem;
+  }
+
+  .page__room {
+    margin-top: 5rem;
+  }
+
+  .page__house {
+    margin-top: 5rem;
+  }
+
   .header__body {
     min-height: 5rem;
   }
@@ -1526,6 +1716,18 @@ body {
 }
 
 @media (max-width: 48.06125em) {
+  .page__security {
+    margin-top: 3.75rem;
+  }
+
+  .page__room {
+    margin-top: 3.75rem;
+  }
+
+  .page__house {
+    margin-top: 3.75rem;
+  }
+
   .header {
     min-height: 0.3125rem;
   }
@@ -1753,3 +1955,5 @@ body {
     color: #eb7515;
   }
 }
+
+.webp .footer{ background-image: url(img/bg.webp); }

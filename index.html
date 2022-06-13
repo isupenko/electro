@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220605072545">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220613213340">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
 				<div class="header__container">
 					<div class="header__body">
 						<div class="header__main">
-							<a href="#" class="header__logo logo-header">
+							<a href="index.html" class="header__logo logo-header">
 								<picture><source srcset="img/logo.webp" type="image/webp"><img class="logo-header__img -ibg" src="img/logo.png" alt="logo"></picture>
 								<div class="logo-header__txt">electrik43.ru</div>
 							</a>
@@ -27,25 +27,25 @@
 								<nav class="menu__body">
 									<ul class="menu__list">
 										<li class="menu__item">
-											<a href="" class="menu__link">Услуги</a>
-											<button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
-											<ul class="menu__sub-list">
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Электропроводка в квартире</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Электропроводка в коттедже</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Сборка электрощитов</a>
-												</li>
-												<li class="menu__sub-item">
-													<a href="#" class="menu__sub-link">Коммерческие обьедки</a>
-												</li>
-											</ul>
+											<a href="" data-goto="#price" data-goto-header data-goto-top="50" class="menu__link">Услуги и цены</a>
+											<!-- <button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="room.html" class="menu__sub-link">Электропроводка в квартире</a>
 										</li>
-										<li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
-										<li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
+										<li class="menu__sub-item">
+											<a href="house.html" class="menu__sub-link">Электропроводка в коттедже</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="#" class="menu__sub-link">Сборка электрощитов</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="#" class="menu__sub-link">Коммерческие обьедки</a>
+										</li>
+									</ul> -->
+										</li>
+										<!-- <li class="menu__item"><a href="#price" class="menu__link">Цены</a></li> -->
+										<li class="menu__item"><a href="security.html" class="menu__link">Гарантии</a></li>
 										<!-- <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li> -->
 										<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
 									</ul>
@@ -98,20 +98,20 @@
 									<div class="swiper-slide__img -ibg">
 										<picture><source srcset="img/main-slider/01.webp" type="image/webp"><img src="img/main-slider/01.jpg" alt="Image"></picture>
 									</div>
-									<a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="swiper-slide__content">
-										<div class="swiper-slide__title">Проводка в квартире</div>
-										<div class="swiper-slide__text">Lorem ipsum dolor sit amet.</div>
-										<div class="swiper-slide__price _icon-arrow-right">5250.00 руб</div>
+									<a href="room.html" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="swiper-slide__content">
+										<div class="swiper-slide__title">Проводка в квартире под ключ</div>
+										<div class="swiper-slide__text">1-комнатная кв. до 45 кв.м.</div>
+										<div class="swiper-slide__price _icon-arrow-right">от 5000.00 руб</div>
 									</a>
 								</div>
 								<div class="main-slider__slide swiper-slide">
 									<div class="swiper-slide__img -ibg">
 										<picture><source srcset="img/main-slider/02.webp" type="image/webp"><img src="img/main-slider/02.jpeg" alt="Image"></picture>
 									</div>
-									<a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="swiper-slide__content">
-										<div class="swiper-slide__title">Проводка в доме</div>
-										<div class="swiper-slide__text">Lorem ipsum dolor sit amet.</div>
-										<div class="swiper-slide__price _icon-arrow-right">10250.00 руб</div>
+									<a href="house.html" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="swiper-slide__content">
+										<div class="swiper-slide__title">Проводка в частном доме под ключ</div>
+										<div class="swiper-slide__text">Цена указана за 1 кв.м.</div>
+										<div class="swiper-slide__price _icon-arrow-right">от 900.00 руб</div>
 									</a>
 								</div>
 								<div class="main-slider__slide swiper-slide">
@@ -157,9 +157,9 @@
 					</div>
 				</div>
 			</section>
-			<section class="price">
+			<section class="price" data-watch="navigator" id="price">
 				<div class="price__container">
-					<h2 class="price__header title-h2" id="price">Цены на электромонтажные работы</h2>
+					<h2 class="price__header title-h2">Цены на электромонтажные работы</h2>
 					<div data-spollers class="price__body">
 						<button data-spoller type="button" class="price__arrow _icon-arrow-down">Штробление</button>
 						<ul class="price__list">
@@ -378,6 +378,24 @@
 								<p class="price__value">5000</p>
 							</li>
 						</ul>
+						<button data-spoller type="button" class="price__arrow price__arrow_red _icon-arrow-down">Примечание</button>
+						<ul class="price__list">
+							<li class="price__item price__item-ts">
+								<p class="price__title">На все работы действует гарантия 1 год.</p>
+							</li>
+							<li class="price__item">
+								<p class="price__title">Цены на работы не включают в себя материалы.</p>
+							</li>
+							<li class="price__item price__item-ts">
+								<p class="price__title">Минимальные расценки на электромонтажные работы – 1200 руб.</p>
+							</li>
+							<li class="price__item">
+								<p class="price__title">Если коммуникации находятся в труднодоступном месте – электрик вправе применить надбавку.</p>
+							</li>
+							<li class="price__item price__item-ts">
+								<p class="price__title">Устанавливается транспортная надбавка при проведении работ в пригороде.</p>
+							</li>
+						</ul>
 					</div>
 					<a href="#" class="price__all">**Скачать полный список услуг</a>
 				</div>
@@ -392,7 +410,7 @@
 						<div class="footer__contact contact-info">
 							<a href="#" class=" contact-info__item contact-info__address _icon-location">Кировская обл., г. Киров</a>
 							<a href="+79091381441" class="contact-info__item contact-info__telephone _icon-phone">+7(909)138-15-41</a>
-							<a href="#" class="contact-info__item contact-info__website _icon-globe">electrik43.ru</a>
+							<a href="mailto:electrik43@mail.ru" class="contact-info__item contact-info__website _icon-globe">electrik43.ru</a>
 						</div>
 					</div>
 					<div data-spollers="768, max" class="footer__menu menu-footer">
@@ -426,7 +444,7 @@
 									<a href="" class="menu-footer__link">Низкие цены</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Гарантии</a>
+									<a href="security.html" class="menu-footer__link">Гарантии</a>
 								</li>
 							</ul>
 						</div>
@@ -462,7 +480,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220605072545"></script>
+	<script src="js/app.min.js?_v=20220613213340"></script>
 </body>
 
 </html>
